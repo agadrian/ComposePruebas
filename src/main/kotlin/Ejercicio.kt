@@ -82,7 +82,12 @@ class Ejercicios {
                         .height(120.dp)
                         .weight(0.2f)
                         .align(Alignment.CenterHorizontally)
-                )
+                ){
+                    Text(
+                        "Caja 1",
+                        modifier = Modifier
+                            .align(Alignment.TopCenter))
+                }
                 Box(
                     modifier = Modifier
                         .fillMaxWidth(0.3f)
@@ -90,7 +95,12 @@ class Ejercicios {
                         .height(180.dp)
                         .weight(0.4f)
                         .align(Alignment.CenterHorizontally)
-                )
+                ){
+                    Text(
+                        "Caja 2",
+                        modifier = Modifier
+                            .align(Alignment.TopCenter))
+                }
                 Box(
                     modifier = Modifier
                         .fillMaxWidth(0.3f)
@@ -98,7 +108,12 @@ class Ejercicios {
                         .height(120.dp)
                         .weight(0.4f)
                         .align(Alignment.CenterHorizontally)
-                )
+                ){
+                    Text(
+                        "Caja 3",
+                        modifier = Modifier
+                            .align(Alignment.TopCenter))
+                }
                 Box(
                     modifier = Modifier
                         .fillMaxWidth(0.3f)
@@ -106,7 +121,12 @@ class Ejercicios {
                         .height(120.dp)
                         .weight(0.2f)
                         .align(Alignment.CenterHorizontally)
-                )
+                ){
+                    Text(
+                        "Caja 4",
+                        modifier = Modifier
+                            .align(Alignment.TopCenter))
+                }
             }
 
         }
@@ -128,9 +148,8 @@ class Ejercicios {
         ) {
             Row(
                 modifier = Modifier
-                    .fillMaxWidth()
-                    .padding(horizontal = 20.dp),
-                    horizontalArrangement = Arrangement.SpaceBetween,
+                    .fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceEvenly,
             ) {
                 Box(
 
@@ -139,7 +158,7 @@ class Ejercicios {
                         .height(120.dp)
                         .align(Alignment.Bottom)
                         .border(2.dp, bordeRojo)
-                ){
+                ) {
                     Text(
                         "Ejemplo 1",
                         modifier = Modifier
@@ -154,7 +173,7 @@ class Ejercicios {
                         .height(120.dp)
                         .align(Alignment.Bottom)
                         .border(2.dp, bordeAzul)
-                ){
+                ) {
                     Text(
                         "Ejemplo 2",
                         modifier = Modifier
@@ -169,7 +188,7 @@ class Ejercicios {
                         .height(120.dp)
                         .align(Alignment.Bottom)
                         .border(2.dp, bordeRojo)
-                ){
+                ) {
                     Text(
                         "Ejemplo 3",
                         modifier = Modifier
@@ -184,7 +203,7 @@ class Ejercicios {
                         .height(120.dp)
                         .align(Alignment.Bottom)
                         .border(2.dp, bordeAzul)
-                ){
+                ) {
                     Text(
                         "Ejemplo 4",
                         modifier = Modifier
@@ -193,7 +212,67 @@ class Ejercicios {
                     )
                 }
             }
+        }
+    }
+
+    @Preview
+    @Composable
+    fun ej5() {
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+                .background(Color.White),
+            contentAlignment = Alignment.Center
+
+        ) {
+            Column(
+                modifier = Modifier
+                    .fillMaxSize()
+
+            ) {
+                Box(
+
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .background(color = Color.Red)
+                        .height(120.dp)
+                        .weight(0.2f)
+                        .align(Alignment.CenterHorizontally)
+                )
+                Spacer(modifier = Modifier
+                    .height(50.dp))
+                Box(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .background(color = Color.Gray)
+                        .height(180.dp)
+                        .weight(0.2f)
+                        .align(Alignment.CenterHorizontally)
+                )
+                Spacer(modifier = Modifier
+                    .height(115.dp))
+                Box(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .background(color = Color.Blue)
+                        .height(120.dp)
+                        .weight(0.2f)
+                        .align(Alignment.CenterHorizontally)
+                )
+                Spacer(modifier = Modifier
+                    .height(25.dp))
+                Box(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .background(color = Color.Green)
+                        .height(120.dp)
+                        .weight(0.2f)
+                        .align(Alignment.CenterHorizontally)
+                )
+
+            }
 
         }
     }
+
 }

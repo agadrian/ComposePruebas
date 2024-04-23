@@ -94,12 +94,12 @@ fun MainScreennnn() {
 }
 
 fun main() = application {
-    val windowState = rememberWindowState(size = DpSize(1000.dp, 800.dp))
+    val windowState = rememberWindowState(size = DpSize(1200.dp, 800.dp))
     Window(
         onCloseRequest = ::exitApplication,
         title = "Ejercicios",
         state = windowState
     ) {
-        Ejercicios().ej2()
+        Ejercicios().ej4()
     }
 }
