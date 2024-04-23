@@ -14,6 +14,10 @@ import androidx.compose.ui.window.Window
 import androidx.compose.ui.window.application
 import androidx.compose.ui.window.rememberWindowState
 
+
+/**
+ * Ejemplos clase
+ */
 @Composable
 @Preview
 fun MainScreen() {
@@ -88,13 +92,14 @@ fun MainScreennnn() {
         }
     }
 }
+
 fun main() = application {
     val windowState = rememberWindowState(size = DpSize(1000.dp, 800.dp))
     Window(
         onCloseRequest = ::exitApplication,
-        title = "Mi login",
+        title = "Ejercicios",
         state = windowState
     ) {
-        MainScreennn()
+        Ejercicios().ej2()
     }
 }
